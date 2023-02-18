@@ -1,5 +1,7 @@
 # Mega Man ● Dr. Wily's Revenge ● Game Boy
 
+[Check it out](https://bugtamer.github.io/gb-megaman/)
+
 ## Passwords
 
 | Elec | Cut | Ice | Fire | Zero-based Index | Coordinates        |
