@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AllPasswordsComponent } from './all-passwords.component';
+import { BossScreenComponent } from './boss-screen.component';
 
-describe('AllPasswordsComponent', () => {
-  let component: AllPasswordsComponent;
-  let fixture: ComponentFixture<AllPasswordsComponent>;
+describe('BossScreenComponent', () => {
+  let component: BossScreenComponent;
+  let fixture: ComponentFixture<BossScreenComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AllPasswordsComponent ]
+      declarations: [ BossScreenComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(AllPasswordsComponent);
+    fixture = TestBed.createComponent(BossScreenComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

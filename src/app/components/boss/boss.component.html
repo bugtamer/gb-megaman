@@ -1,0 +1,10 @@
+<img
+    src="./assets/images/bosses/{{ isDefeated ? 'defeated-boss' : boss }}.png"
+    [alt]="name"
+    [title]="name"
+    [style.width.px]="32 * factor"
+    [style.height.px]="32 * factor"
+    [style.margin-left.px]="x(boss)"
+    [style.margin-top.px]="y(boss)"
+    (click)="onToggle()"
+/>

@@ -1,0 +1,16 @@
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+app-boss-screen {
+    margin-top: 2rem;
+}
+
+app-password-screen {
+    margin-bottom: .5rem;
+}
+
+h1, p {
+    text-align: center;
+}

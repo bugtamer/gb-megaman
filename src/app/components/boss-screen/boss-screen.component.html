@@ -1,0 +1,16 @@
+<div class="background" [style.width.px]="160 * factor" [style.height.px]="144 * factor">
+    <app-boss boss="Cutman"  [factor]="factor" (toggle)="toggleBoss($event)"></app-boss>
+    <app-boss boss="Iceman"  [factor]="factor" (toggle)="toggleBoss($event)"></app-boss>
+    <app-boss boss="Elecman" [factor]="factor" (toggle)="toggleBoss($event)"></app-boss>
+    <app-boss boss="Fireman" [factor]="factor" (toggle)="toggleBoss($event)"></app-boss>
+    <img
+        *ngIf="isWilyAvailable"
+        src="./assets/images/bosses/framed-Dr-Wily.png"
+        alt="Dr-Wily"
+        title="Dr. Wily"
+        [style.width.px]="48 * factor"
+        [style.heigth.px]="48 * factor"
+        [style.margin-left.px]="56 * factor"
+        [style.margin-top.px]="48 * factor"
+    />
+</div>

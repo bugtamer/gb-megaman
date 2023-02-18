@@ -4,12 +4,16 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { PasswordService } from './services/password/password.service';
-import { AllPasswordsComponent } from './components/all-passwords/all-passwords.component';
+import { PasswordScreenComponent } from './components/password-screen/password-screen.component';
+import { BossScreenComponent } from './components/boss-screen/boss-screen.component';
+import { BossComponent } from './components/boss/boss.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AllPasswordsComponent
+    PasswordScreenComponent,
+    BossScreenComponent,
+    BossComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,8 +1,16 @@
-<ul *ngIf="!!password">
-    <li>{{ password.password[0] }} ({{ index(password.password[0]) }})</li>
-    <li>{{ password.password[1] }} ({{ index(password.password[1]) }})</li>
-    <li>{{ password.password[2] }} ({{ index(password.password[2]) }})</li>
-    <li>{{ password.password[3] }} ({{ index(password.password[3]) }})</li>
-    <li>{{ password.password[4] }} ({{ index(password.password[4]) }})</li>
-</ul>
-<pre>{{ password | json }}</pre>
+<h1>
+    Mega Man (Game Boy)
+    <br />
+    Password Generator
+</h1>
+
+<div class="center">
+    <app-boss-screen [factor]="factor" (defeated)="setDefeatedBosses($event)"></app-boss-screen>
+</div>
+
+<div class="center">
+    <app-password-screen [factor]="factor" [password]="password"></app-password-screen>
+</div>
+
+<p title="Pasword">{{ coordinates }}</p>
+<p title="Defeated bosses">{{ defeated }}</p>

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { BehaviorSubject, filter, map, Observable, tap } from 'rxjs';
+import { map, Observable } from 'rxjs';
 import { Password } from 'src/app/models/password.model';
 import { Boss, haveSameBosses } from 'src/app/models/boss.model';
 
@@ -9,17 +9,12 @@ import { Boss, haveSameBosses } from 'src/app/models/boss.model';
 })
 export class PasswordService {
 
-  private passwords$ = new BehaviorSubject<Password[]>([]);
-
   constructor(private http: HttpClient) { }
 
 
   getPassword(defeatedBosses: Array<Boss>): Observable<Password | undefined> {
-    if (this.passwords$.value.length > 0) {
-      return this.find(this.passwords$.asObservable(), defeatedBosses);
-    }
     const url = 'assets/data/gb-megaman-passwords.json';
-    return this.find(this.http.get<Password[]>(url).pipe(tap(pwds => this.passwords$.next(pwds))), defeatedBosses);
+    return this.find(this.http.get<Password[]>(url), defeatedBosses);
   }
 
 
