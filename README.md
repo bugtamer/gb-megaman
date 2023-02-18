@@ -2,6 +2,10 @@
 
 [Check it out](https://bugtamer.github.io/gb-megaman/)
 
+![App snapshot](./src/assets/images/snapshot.png)
+
+- See [Megaman 2](https://github.com/bugtamer/megaman2) (NES) Password generator
+
 ## Passwords
 
 | Elec | Cut | Ice | Fire | Zero-based Index | Coordinates        |
